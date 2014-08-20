@@ -1761,10 +1761,8 @@ window.cordova = require('cordova');
 require('cordova/init');
 
 })();
-function onDeviceReady() {
-    if (parseFloat(window.device.version) === 7.0) {
-          document.body.style.marginTop = "20px";
-    }
+//take iOS7 transparent menubar into account
+if (parseFloat(window.device.version) === 7.0) {
+    $('[data-role="header"]').addClass("ios7");
+    $('.ui-btn-left').addClass("ios7-header-button");
 }
- 
-document.addEventListener('deviceready', onDeviceReady, false);
