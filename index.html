@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>YEI College Mentor App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+<!--use this instead-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!--Cordova said to nix this-->
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="custom.css" />
 	<script src="scripts/jquery.js"></script>
@@ -116,6 +119,29 @@
 <div data-role="content">
 	<p>On this page you will find quick tips when it comes to applying for any and all things. The process can be overwhelming if you do not know a few pointers, but these will help. </p>
 	
+	<h3>FAFSA Issues</h3>
+	 <p>The FASFA application is a long process that requires specific information about your family's economic situation. That is why sometimes it is easy to make mistakes when filling out the application. FASFA will notify you if your application was "rejected", but do not worry! This "rejection" just means that you have to correct some information on your application. Below are some phrases that mean that you need to correct information.</p>
+		<ul>
+			<li><strong>Reject Codes</strong>: There was a problem processing your aid.</li>
+				<ul>
+					<li>Signature Missing</li>
+					<li>Discrepancies in tax information</li>
+					<li>Not registered with selective services</li>
+				</ul>
+			<li><strong>Verification</strong>: Schools must verify info for some students by having them send proof of:</li>
+				<ul>
+					<li>Family Size</li>
+					<li>Tax Information</li>
+				</ul>
+			<li><strong>Extra Documentation</strong></li>
+				<ul>
+					<li>Signed Statement of Eligibility</li>
+					<li>Student Surveys</li>
+					<li>Copies of ID</li>
+				</ul>
+		</ul>
+		<p>To correct this information you just need to log back into your FASFA account, make the correction, and resubmit. </p>
+	
 	<div data-role="tabs" id="tabs">
 		<div data-role="navbar">
 			<ul>
@@ -146,28 +172,7 @@
 		
 	</div><!--/tabs-->
 	
-	<h3>FAFSA Issues</h3>
-	 <p>The FASFA application is a long process that requires specific information about your family's economic situation. That is why sometimes it is easy to make mistakes when filling out the application. FASFA will notify you if your application was "rejected", but do not worry! This "rejection" just means that you have to correct some information on your application. Below are some phrases that mean that you need to correct information.</p>
-		<ul>
-			<li><strong>Reject Codes</strong>: There was a problem processing your aid.</li>
-				<ul>
-					<li>Signature Missing</li>
-					<li>Discrepancies in tax information</li>
-					<li>Not registered with selective services</li>
-				</ul>
-			<li><strong>Verification</strong>: Schools must verify info for some students by having them send proof of:</li>
-				<ul>
-					<li>Family Size</li>
-					<li>Tax Information</li>
-				</ul>
-			<li><strong>Extra Documentation</strong></li>
-				<ul>
-					<li>Signed Statement of Eligibility</li>
-					<li>Student Surveys</li>
-					<li>Copies of ID</li>
-				</ul>
-		</ul>
-		<p>To correct this information you just need to log back into your FASFA account, make the correction, and resubmit. </p>
+	
 	
 </div>
 </div><!--/doanddont-->
@@ -483,7 +488,7 @@
                 <p> Subsidized loans are meant for low income students and have a much lower interest rate than unsubsidized loans. They also do not accrue debt until after a student graduates. </p>          
               </div>
             
-            <a href="#loanyrs" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">How many years do I have to pay off my student loans?</a>
+            <a href="#loanyrs" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">How many years do I have <br>to pay off my student loans?</a>
               <div data-role="popup" id="loanyrs" data-dismissible="false">
             	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
                 <p>You have 10 years to pay off a student loan. </p> 
@@ -530,13 +535,15 @@
           <p>Work Study is a government is a college program that allows students to work and pay off their loan debt at the same time.</p>
         </div>
 					
-			<a href="#workstudyinvolved" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">How can I be involved in Work Study?</a>  
+			<a href="#workstudyinvolved" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">
+			How can I be involved in<br> Work Study?
+			</a>  
 			  <div data-role="popup" id="workstudyinvolved" data-dismissible="false">
 				  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
           <p> To be involved in Work Study, one must fill out a FAFSA application.</p>
         </div>
 
-      <a href="#workstudyaid" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Does Work Study affect my financial aid ability?</a>  
+      <a href="#workstudyaid" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Does Work Study affect my<br> financial aid ability?</a>  
         <div data-role="popup" id="workstudyaid" data-dismissible="false">
 	        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
           <p> No, the money you recieve from Work Study does not affect your financial aid ability or financial need.</p>
@@ -1602,6 +1609,15 @@
 <div data-role="content">
 	<p>This app was created over the course of a six-day intensive summer camp called the <span class="strong">Youth Empowerment Institute (YEI)</span> which taught the students to create apps while also learning about college.</p>
 	<p>The purpose of this app is to help all high school kids stay on the right track in preparing for college. It includes everything one needs to know on what to do to be ready for college, while still in high school.</p>
+	
+		<h2>Sponsors</h2>
+		<p>These organizations made the camp and this camp possible</p>
+			<ul data-role="listview" data-inset="true">
+				<li data-icon="info"><a href="#yei" /><h4>Youth Empowerment</h4><h4>Institute</h4></a></li>
+				<li data-icon="info"><a href="#everett" /><h4>The Everett Program</h4></a></li>
+				<li data-icon="info"><a href="#wtec" /><h4>Watsonville TEC</h4></a></li>
+			</ul>
+	
 	<h3>App Inventors</h3>
 	<br>
 	<ul data-role="listview">         
@@ -1623,13 +1639,7 @@
 	</ul> 
 
 
-	<h2>Sponsors</h2>
-		<p>These organizations made the camp and this camp possible</p>
-			<ul data-role="listview" data-inset="true">
-				<li data-icon="info"><a href="#yei" /><h4>Youth Empowerment</h4><h4>Institute</h4></a></li>
-				<li data-icon="info"><a href="#everett" /><h4>The Everett Program</h4></a></li>
-				<li data-icon="info"><a href="#wtec" /><h4>Watsonville TEC</h4></a></li>
-			</ul>
+
 </div>
 </div><!--/credits -->
 
