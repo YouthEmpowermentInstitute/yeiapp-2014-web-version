@@ -6,4 +6,4 @@ $(document).bind("mobileinit", function () {
 if (parseFloat(window.device.version) === 7.0) {
     $('[data-role="header"]').addClass("ios7");
     $('.ui-btn-left').addClass("ios7-header-button");
-}
+};
